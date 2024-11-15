@@ -3,11 +3,11 @@
         {
             "name": "Target 1",
             "includePath": [
-                "c:\\Users\\lzh26\\dev\\ESlab\\template\\Start",
-                "c:\\Users\\lzh26\\dev\\ESlab\\template\\Library",
-                "c:\\Users\\lzh26\\dev\\ESlab\\template\\System",
-                "c:\\Users\\lzh26\\dev\\ESlab\\template\\Hardware",
-                "c:\\Users\\lzh26\\dev\\ESlab\\template\\User",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab5\\Start",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab5\\Library",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab5\\System",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab5\\Hardware",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab5\\User",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw"
             ],

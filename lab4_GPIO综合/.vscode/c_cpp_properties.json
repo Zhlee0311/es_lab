@@ -3,11 +3,11 @@
         {
             "name": "Target 1",
             "includePath": [
-                "c:\\Users\\lzh26\\dev\\ESlab\\lab4\\Start",
-                "c:\\Users\\lzh26\\dev\\ESlab\\lab4\\Library",
-                "c:\\Users\\lzh26\\dev\\ESlab\\lab4\\System",
-                "c:\\Users\\lzh26\\dev\\ESlab\\lab4\\Hardware",
-                "c:\\Users\\lzh26\\dev\\ESlab\\lab4\\User",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab4_GPIO综合\\Start",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab4_GPIO综合\\Library",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab4_GPIO综合\\System",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab4_GPIO综合\\Hardware",
+                "c:\\Users\\lzh26\\dev\\ESlab\\lab4_GPIO综合\\User",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw"
             ],

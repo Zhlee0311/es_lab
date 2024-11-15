@@ -400,6 +400,26 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Key.h</FilePath>
             </File>
+            <File>
+              <FileName>Button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Button.c</FilePath>
+            </File>
+            <File>
+              <FileName>Button.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Button.h</FilePath>
+            </File>
+            <File>
+              <FileName>Dig.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Dig.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Dig.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

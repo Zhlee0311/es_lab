@@ -2,7 +2,6 @@
 #include "Button.h"
 #include "Dig.h"
 
-
 int main(void)
 {
     Dig_Init();
@@ -12,13 +11,22 @@ int main(void)
     uint16_t port_D = 0;
 
     int last = -2;
+    int released = 1;
     while (1)
     {
         int button = Button_Scan();
-        if (button != -1 && button != last)
+        if (button != -1)
         {
-            Dig_Config(button);
-            last = button;
+            if (button != last || (button == last && released))
+            {
+                released = 0;
+                Dig_Config(button);
+                last = button;
+            }
+        }
+        else
+        {
+            released = 1;
         }
         Dig_Set(&port_C, &port_D);
     }
