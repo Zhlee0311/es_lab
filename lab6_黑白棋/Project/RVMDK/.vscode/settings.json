@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "font.h": "c",
+        "FONT.H": "cpp",
+        "stm32f10x_spi.h": "c",
+        "stm32f10x.h": "c",
+        "uart.h": "c"
+    }
+}

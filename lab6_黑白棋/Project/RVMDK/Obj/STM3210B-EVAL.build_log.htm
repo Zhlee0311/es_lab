@@ -1,0 +1,171 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Zhenghao Li, HDU, LIC=9WSKC-74XRB-TGV7T-RTMIW-DUAX7-B94RZ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+c:\Users\lzh26\Desktop\触摸屏校准\Project\RVMDK\EID-V2.uvprojx
+Project File Date:  12/16/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM3210B-EVAL'
+compiling UART.c...
+compiling Timer.c...
+compiling main.c...
+..\src\main.c(44): warning:  #223-D: function "RS232_Configuration" declared implicitly
+  	RS232_Configuration(); // 初始化串口
+..\src\main.c(45): warning:  #223-D: function "NVIC_Configuration" declared implicitly
+  	NVIC_Configuration();  // 配置NVIC，用于串口中断
+..\src\main.c(46): warning:  #223-D: function "systick_init" declared implicitly
+  	systick_init();       // 初始化系统滴答定时器
+..\src\main.c(47): warning:  #223-D: function "LCD_Configuration" declared implicitly
+  	LCD_Configuration();  // 配置与LCD相关的引脚
+..\src\main.c(48): warning:  #223-D: function "Touch_Init" declared implicitly
+  	Touch_Init();       
+..\src\main.c(49): warning:  #223-D: function "LCD_Init" declared implicitly
+  	LCD_Init();
+..\src\main.c(54): warning:  #223-D: function "GridInit" declared implicitly
+  		GridInit();
+..\src\main.c: 7 warnings, 0 errors
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_it.c...
+compiling dma.c...
+..\src\dma.c(44): error:  #268: declaration may not appear after executable statement in block
+  	DMA_InitTypeDef DMA_InitStructure;                      // 初始化结构体
+..\src\dma.c: 0 warnings, 1 error
+compiling SPI.c...
+..\src\SPI.c(103): warning:  #1-D: last line of file ends without a newline
+  } 
+..\src\SPI.c: 1 warning, 0 errors
+compiling IIC-lib.c...
+..\src\IIC-lib.c(126): warning:  #1-D: last line of file ends without a newline
+  }
+..\src\IIC-lib.c: 1 warning, 0 errors
+compiling systick.c...
+..\src\systick.c(48): warning:  #1-D: last line of file ends without a newline
+  }
+..\src\systick.c: 1 warning, 0 errors
+compiling stm32f10x_gpio.c...
+compiling EXTI.c...
+..\inc\DigitalTube.h(17): warning:  #1-D: last line of file ends without a newline
+  /******END OF FILE****/
+..\inc\EXTI.h(17): warning:  #1-D: last line of file ends without a newline
+  /******END OF FILE****/
+..\src\EXTI.c: 2 warnings, 0 errors
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_adc.c...
+compiling lcd.c...
+..\src\lcd.c(28): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i, j;
+..\src\lcd.c(28): warning:  #177-D: variable "j"  was declared but never referenced
+  	int i, j;
+..\src\lcd.c(276): warning:  #940-D: missing return statement at end of non-void function "LCD_ReadPoint" 
+  }
+..\src\lcd.c(313): warning:  #177-D: variable "temp"  was declared but never referenced
+  	u16 temp;
+..\src\lcd.c(427): warning:  #177-D: variable "hsareg"  was declared but never referenced
+  	u8 hsareg, heareg, vsareg, veareg;
+..\src\lcd.c(427): warning:  #177-D: variable "heareg"  was declared but never referenced
+  	u8 hsareg, heareg, vsareg, veareg;
+..\src\lcd.c(427): warning:  #177-D: variable "vsareg"  was declared but never referenced
+  	u8 hsareg, heareg, vsareg, veareg;
+..\src\lcd.c(427): warning:  #177-D: variable "veareg"  was declared but never referenced
+  	u8 hsareg, heareg, vsareg, veareg;
+..\src\lcd.c(428): warning:  #177-D: variable "hsaval"  was declared but never referenced
+  	u16 hsaval, heaval, vsaval, veaval;
+..\src\lcd.c(428): warning:  #177-D: variable "heaval"  was declared but never referenced
+  	u16 hsaval, heaval, vsaval, veaval;
+..\src\lcd.c(428): warning:  #177-D: variable "vsaval"  was declared but never referenced
+  	u16 hsaval, heaval, vsaval, veaval;
+..\src\lcd.c(428): warning:  #177-D: variable "veaval"  was declared but never referenced
+  	u16 hsaval, heaval, vsaval, veaval;
+..\src\lcd.c(585): warning:  #177-D: variable "temp"  was declared but never referenced
+  	u16 temp;
+..\src\lcd.c(854): warning:  #177-D: variable "SPI_InitStructure"  was declared but never referenced
+  	SPI_InitTypeDef SPI_InitStructure;
+..\src\lcd.c(960): warning:  #111-D: statement is unreachable
+  	r = Temp - 200;	
+..\src\lcd.c(942): warning:  #177-D: variable "j"  was declared but never referenced
+  	u16 i, j, k;
+..\src\lcd.c(942): warning:  #177-D: variable "k"  was declared but never referenced
+  	u16 i, j, k;
+..\src\lcd.c(985): warning:  #111-D: statement is unreachable
+  	r = Temp - 190;
+..\src\lcd.c(970): warning:  #177-D: variable "j"  was declared but never referenced
+  	u16 i, j, k;
+..\src\lcd.c(970): warning:  #177-D: variable "k"  was declared but never referenced
+  	u16 i, j, k;
+..\src\lcd.c(1131): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(showstr, "TouchAD, x:%4d y%4d   ", xScreenAD, yScreenAD);
+..\src\lcd.c(1132): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(45, 12, 240, 12, 12, showstr);
+..\src\lcd.c(1144): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(showstr, "TouchAD, x:%4d y%4d   ", xScreenAD, yScreenAD);
+..\src\lcd.c(1145): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(45, 24, 240, 12, 12, showstr);
+..\src\lcd.c(1155): warning:  #223-D: function "sprintf" declared implicitly
+  	sprintf(showstr, "Press at:%4d y%4d   ", xScreen, yScreen);
+..\src\lcd.c(1156): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	LCD_ShowString(45, 0, 240, 12, 12, showstr);
+..\src\lcd.c(1189): warning:  #1-D: last line of file ends without a newline
+  }
+..\src\lcd.c(1035): warning:  #177-D: function "getPos"  was declared but never referenced
+  static void getPos(u16 xScreen, u16 yScreen)
+..\src\lcd.c: 28 warnings, 0 errors
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_spi.c...
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_flash.c...
+compiling system_stm32f10x.c...
+".\Obj\STM3210B-EVAL.axf" - 1 Error(s), 40 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM3210B-EVAL
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
