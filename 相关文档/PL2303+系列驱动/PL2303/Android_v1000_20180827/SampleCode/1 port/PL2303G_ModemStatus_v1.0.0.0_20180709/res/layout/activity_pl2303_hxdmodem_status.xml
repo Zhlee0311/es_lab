@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.com.prlific.pl2303hxdmodemstatus.PL2303HXDModemStatusActivity" >
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="101dp"
+        android:layout_height="71dp"
+        android:text="@string/Open_Button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.67" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupDTR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.11" >
+
+                        <RadioButton
+                            android:id="@+id/radioDTR_ON"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/s_DTR_ON" />
+
+                        <RadioButton
+                            android:id="@+id/radioDTR_Off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:checked="true"
+                            android:text="@string/s_DTR_OFF" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupRTS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.51" >
+
+                        <RadioButton
+                            android:id="@+id/radioRTS_ON"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"  
+                            android:text="@string/s_RTS_ON" />
+
+                        <RadioButton
+                            android:id="@+id/radioRTS_Off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/s_RTS_OFF" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnGetModemStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_GetModemStatus" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/s_CTS" />
+
+                        <ImageView
+                            android:id="@+id/imageCTS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_off1" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/s_DCD" />
+
+                        <ImageView
+                            android:id="@+id/imageDCD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_off1" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/s_DSR" />
+
+                        <ImageView
+                            android:id="@+id/imageDSR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_off1" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/s_RI" />
+
+                        <ImageView
+                            android:id="@+id/imageRI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_off1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/svText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.48" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="679dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/mTvResponse"
+                            android:layout_width="match_parent"
+                            android:layout_height="655dp"
+                            android:text="TextView" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">PL2303G 8 GPIO_B Test v1.0.0.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="OpenPort">Open</string>
+    <string name="ClosePort">Close</string>
+    <string name="GPO">GPB_0-------></string>
+    <string name="GP1">GPB_1-------></string>
+    <string name="GP2">GPB_2-------></string>
+    <string name="GP3">GPB_3-------></string>
+    <string name="GP4">GPB_4-------></string>
+    <string name="GP5">GPB_5-------></string>
+    <string name="GP6">GPB_6(Suspen_N)-------></string>
+    <string name="GP7">GPB_7-------></string>
+    <string name="Enable_GPIO">Out_Enable</string>
+    <string name="Set_Button">Set</string>
+    <string name="Get_Button">Get</string>
+    <string name="GPIO_Value_Range">0 or 1</string>
+
+</resources>

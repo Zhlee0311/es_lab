@@ -1,0 +1,392 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PL2303GPIOActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btOpenPort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OpenPort" />
+
+                   
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+                        android:id="@+id/tViewGPIO_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GPO" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer">
+
+                        <requestFocus />
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP1" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP2" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer"
+                       />
+                 
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP3" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP4" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP5" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer" />
+
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP6" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tViewGPIO_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GP7" />
+
+                    <CheckBox
+                        android:id="@+id/cBGPIO_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enable_GPIO" />
+
+                    <Button
+                        android:id="@+id/btGetGPIO_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/Get_Button" />
+
+                    <Button
+                        android:id="@+id/btSetGPIO_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Set_Button" />
+
+                    <EditText
+                        android:id="@+id/eTGPIOval_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:hint="@string/GPIO_Value_Range"
+                        android:inputType="number"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sVText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tVResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

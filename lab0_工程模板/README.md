@@ -9,7 +9,3 @@
 - `Start` : 启动文件
 
 - `User` : 库函数的包含头文件，以及主函数等
-
-## 使用
-
-> git clone git@github.com:Zhlee0311/es_lab_template.git

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PL2303GModemStatus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Open_Button">Open</string>
+    <string name="s_GetModemStatus">GetModemStatus</string>
+    <string name="s_DTR_ON">DTR On</string>
+    <string name="s_DTR_OFF">DTR Off</string>
+    <string name="s_RTS_ON">RTS On</string>
+    <string name="s_RTS_OFF">RTS Off</string>
+    <string name="s_DSR_ON">DSR On</string>
+    <string name="s_DSR_OFF">DSR Off</string>
+    <string name="s_DSR">DSR</string>
+    <string name="s_DCD">DCD</string>
+    <string name="s_RI">RI</string>
+    <string name="s_CTS">CTS</string>
+    <string name="s_DTR">DTR</string>
+    <string name="s_RTS">RTS</string>
+</resources>
