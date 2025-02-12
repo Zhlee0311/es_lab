@@ -24,9 +24,9 @@
 
 [实验6-黑白棋](https://github.com/Zhlee0311/es_lab/tree/main/lab6_黑白棋)
 > 实现人人对弈、人机对弈的黑白棋游戏
-> 1.显示屏、触摸屏：驱动ili9341、XPT2046 AD
-> 2.上位机：SerialPort(JS)
-> 3.算法：ChatGPT提供思路
+>- 显示屏、触摸屏：驱动ili9341、XPT2046 AD
+>- 上位机：SerialPort(JS)
+>- 算法：ChatGPT提供思路
 
 
 
